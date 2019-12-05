@@ -19,10 +19,10 @@ Resources:
       Runtime: nodejs10.x
       MemorySize: 1024
       AutoPublishAlias: live
-      DeploymentPreference:
-        Type: AllAtOnce # Or Canary10Percent5Minutes, Linear10PercentEvery1Minute, ...
+      # DeploymentPreference:
+      #   Type: AllAtOnce # Or Canary10Percent5Minutes, Linear10PercentEvery1Minute, ...
       ProvisionedConcurrencyConfig:
-        ProvisionedConcurrentExecutions: 10
+        ProvisionedConcurrentExecutions: 15
       Events:
         HelloWorld:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
